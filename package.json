@@ -1,0 +1,38 @@
+{
+  "name": "partialsandhbs",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Trying to make partials work",
+  "source": "src/index.html",
+  "scripts": {
+    "dev": "parcel serve src/index.html --port 3000 --no-cache --open",
+    "build": "parcel build src/index.html --no-source-maps",
+    "start": "npm run build && node server.js",
+    "lint": "eslint src/**/*.js"
+  },
+  "targets": {
+    "default": {
+      "distDir": "./dist"
+    }
+  },
+  "keywords": [],
+  "author": "Yarolsav Bashmakov",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "8.38.0",
+    "eslint": "8.38.0",
+    "parcel": "2.8.3",
+    "parcel-transformer-hbs": "1.0.4",
+    "postcss": "^8.4.21",
+    "postcss-import": "^15.1.0",
+    "postcss-mixins": "^9.0.4",
+    "postcss-nested": "^6.0.1",
+    "postcss-preset-env": "^8.3.0",
+    "postcss-simple-vars": "^7.0.1",
+    "stylelint": "15.4.0"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "handlebars": "4.7.7"
+  }
+}
